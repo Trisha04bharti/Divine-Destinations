@@ -186,10 +186,16 @@ body {
 #page3 {
     display: flex; /* Arrange children in a row */
     flex-wrap: wrap; /* Allow wrapping */
-    gap: 15px; /* Space between children */
+    gap: 85px; /* Space between children */
     justify-content: center; /* Center align the children */
     padding: 20px;
 }
+
+
+ .heading2{
+   
+    background-color: #0056b3;
+ }
 
 .child {
     width: 350px;
@@ -199,25 +205,49 @@ body {
     align-items: center;
     gap: 10px;
     position: relative;
+   
+    box-shadow: 1px 1px 20px #012290f7 , 1px 1px 40px #0053b8f7;
+
+    
+   height : 350px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+      
+    
 }
 
 .carousel {
     width: 100%;
-    height: 350px; /* Fixed height for the images */
+    height: 350px; 
     position: relative;
-    overflow: hidden; /* Hide extra images */
+    overflow: hidden; 
+   
+    border-radius: 20px;
+
+    
 }
 
+
+
 .carousel img {
+    
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: absolute;
+    /* position: absolute; */
+    padding : 2px;
     top: 0;
     left: 0;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    border-radius : 20px;
+    transition: opacity .1s ease-in-out;
 }
+
+
 
 .carousel img.active {
     opacity: 1; /* Show the active image */
@@ -347,7 +377,7 @@ body {
 
     }
 
-    #page3 {
+    /* #page3 {
         min-height: 120vh;
         width: 100%;
         position: relative;
@@ -360,20 +390,38 @@ body {
     .child {
         height: 54vh;
         width: 88vw;
-        /* background-color: red; */
-        /* border: 2px solid #000; */
+        background-color: red;
+        border: 2px solid #000;
         position: relative;
         padding: 15vw;
         display: flex;
         align-items: center;
         justify-content: center;
+        border-radius : 20px;
     }
 
     .child img {
         height: 100%;
-    }
+    } */
+
+    /* .child {
+        background-color: blue;
+        color: white;
+        padding: 20px;
+        border-radius: 5px;
+        min-height: 100px;
+      }
+    
+      .carousel img {
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        margin: 10px auto;
+      } */
 
 }
+
+
 
 #buddha-logo {
     height: 50px; /* Adjust size */
@@ -389,7 +437,8 @@ body {
     padding: 20px;
     background: white;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 20px #007bff, 1px 1px 20px 40px  #91EAE4;
+
   }
   
   h1 {

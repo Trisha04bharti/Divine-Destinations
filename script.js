@@ -238,27 +238,103 @@ document.querySelectorAll('input[name="locationOption"]').forEach((radio) => {
 
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  const carousels = document.querySelectorAll(".carousel");
+// document.addEventListener("DOMContentLoaded", () => {
+//   const carousels = document.querySelectorAll(".carousel");
 
-  carousels.forEach((carousel) => {
+//   carousels.forEach((carousel) => {
+//       let currentIndex = 0;
+//       const images = carousel.querySelectorAll("img");
+
+//       // Function to cycle images
+//       function cycleImages() {
+//           images.forEach((img, index) => {
+//               img.classList.remove("active"); // Remove active class
+//               if (index === currentIndex) {
+//                   img.classList.add("active"); // Add active class to current image
+//               }
+//           });
+
+//           currentIndex = (currentIndex + 1) % images.length; // Move to the next image
+//       }
+
+//       // Start the carousel
+//       setInterval(cycleImages, 3000); // Change image every 3 seconds
+//   });
+// });
+
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   const carousels = document.querySelectorAll(".carousel");
+
+//   carousels.forEach((carousel) => {
+//     let currentIndex = 0;
+//     const images = carousel.querySelectorAll("img");
+
+//     // Set the first image to be active initially
+//     images[currentIndex].classList.add("active");
+
+//     // Function to cycle images
+//     function cycleImages() {
+//       const previousIndex = currentIndex;
+//       currentIndex = (currentIndex + 1) % images.length; // Move to the next image
+
+//       // Remove active class from the previous image and add to the current
+//       images[previousIndex].classList.remove("active");
+//       images[currentIndex].classList.add("active");
+//     }
+
+//     // Start the carousel
+//     setInterval(cycleImages, 3000); // Change image every 3 seconds
+//   });
+// });
+
+
+
+
+
+
+  // document.querySelectorAll('.child').forEach(child => {
+  //   const firstImage = child.querySelector('.carousel img');
+  //   if (firstImage) {
+  //     const imageUrl = firstImage.src;
+  //     child.style.backgroundImage = `url('${imageUrl}')`;
+  //   }
+  // });
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const carousels = document.querySelectorAll(".carousel");
+  
+    carousels.forEach((carousel) => {
       let currentIndex = 0;
       const images = carousel.querySelectorAll("img");
-
+      const child = carousel.closest(".child");
+  
+      // Set the first image to be active initially
+      images[currentIndex].classList.add("active");
+      if (child) {
+        child.style.backgroundImage = `url('${images[currentIndex].src}')`;
+      }
+  
       // Function to cycle images
       function cycleImages() {
-          images.forEach((img, index) => {
-              img.classList.remove("active"); // Remove active class
-              if (index === currentIndex) {
-                  img.classList.add("active"); // Add active class to current image
-              }
-          });
-
-          currentIndex = (currentIndex + 1) % images.length; // Move to the next image
+        const previousIndex = currentIndex;
+        currentIndex = (currentIndex + 1) % images.length; // Move to the next image
+  
+        // Remove active class from the previous image and add to the current
+        images[previousIndex].classList.remove("active");
+        images[currentIndex].classList.add("active");
+  
+        // Update the background image of the parent `.child`
+        if (child) {
+          child.style.backgroundImage = `url('${images[currentIndex].src}')`;
+        }
       }
-
+  
       // Start the carousel
       setInterval(cycleImages, 3000); // Change image every 3 seconds
+    });
   });
-});
+  
+
 
