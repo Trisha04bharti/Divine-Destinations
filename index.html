@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Good Co</title>
+    <link rel="shortcut icon" href="https://pbs.twimg.com/profile_images/1499265096006000640/ZhEnSTch_400x400.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+      
+        <div id="nav">
+            <div id="nav-part1">
+                <img src="./logo.png" alt="Gautam Buddha Logo" id="buddha-logo">
+            </div>
+            <div id="nav-part2">
+                <div id="links">
+                    <a href="#">Home</a>
+                    <a href="#">Visiting Hours</a>
+                    <a href="#">Nearby Attractions</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        
+    
+    <div id="cursor"></div>
+    <div id="main">
+        <div id="page1">
+            <h1> Divine </h1>                                    
+            <h1> Destinations</h1>
+            <div id="video-container">
+                <div id="play">PLAY</div>
+                <video autoplay loop muted src="./bodhgaya.mp4"></video>
+            </div>
+        </div>
+        <div id="page2">
+            <div id="elem1" class="elem">
+                <img data-scroll data-scroll-speed="1"
+                    src="./maintemple.png"
+                    alt="">
+                <div data-scroll data-scroll-speed="-2" class="dets"></div>
+
+              
+            </div>
+            <div id="elem2" class="elem">
+                <img data-scroll data-scroll-speed="1"
+                    src="./maintemple.png"
+                    alt="">
+                <div data-scroll data-scroll-speed="-2" class="dets"></div>
+
+            </div>
+            <div id="elem3" class="elem">
+                <!-- <img data-scroll data-scroll-speed="1"
+                    src="https://cdn.sanity.io/images/w8f1ak3c/production/d3151106849ff2494d66916cf554c68a0603444d-902x1500.png/Rectangle%20220.png?rect=1,0,900,1500&w=640&h=1067&fit=min&auto=format"
+                    alt="">
+                <div data-scroll data-scroll-speed="-2" class="dets"></div> -->
+
+                <div class="container">
+                    <h1>Distance Calculator</h1>
+                    <form id="distance-form">
+                      <label>
+                        <input type="radio" name="locationOption" value="auto" checked>
+                        Use Current Location
+                      </label>
+                      <label>
+                        <input type="radio" name="locationOption" value="manual">
+                        Enter Both Locations
+                      </label>
+                
+                      <div id="manual-locations" style="display: none;">
+                        <label for="origin">Origin:</label>
+                        <input type="text" id="origin" placeholder="Enter origin address">
+                      </div>
+                
+                      <label for="destination">Destination:</label>
+                      <input type="text" id="destination" placeholder="Enter destination address" required>
+                
+                      <button type="submit">Calculate Distance</button>
+                    </form>
+                    <div id="result"></div>
+                  </div>
+
+            </div>
+
+        </div>
+        <div id="page3">
+            <div class="child" id="child1">
+                <img src="https://cdn.sanity.io/images/w8f1ak3c/production/d6a2a4be8e3063d64648773f57f5f447609a93ab-5000x5000.png/Love-Care-Pack-Expanded-Two-Good-Co.png?w=1024&h=1024&auto=format"
+                    alt="">
+            </div>
+            <div class="child" id="child2">
+                <img src="https://cdn.sanity.io/images/w8f1ak3c/production/d6a2a4be8e3063d64648773f57f5f447609a93ab-5000x5000.png/Love-Care-Pack-Expanded-Two-Good-Co.png?w=1024&h=1024&auto=format"
+                    alt="">
+
+            </div>
+            <div class="child" id="child3">
+                <img src="https://cdn.sanity.io/images/w8f1ak3c/production/d6a2a4be8e3063d64648773f57f5f447609a93ab-5000x5000.png/Love-Care-Pack-Expanded-Two-Good-Co.png?w=1024&h=1024&auto=format"
+                    alt="">
+
+            </div>
+            <div class="child" id="child4">
+                <img src="https://cdn.sanity.io/images/w8f1ak3c/production/d6a2a4be8e3063d64648773f57f5f447609a93ab-5000x5000.png/Love-Care-Pack-Expanded-Two-Good-Co.png?w=1024&h=1024&auto=format"
+                    alt="">
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
