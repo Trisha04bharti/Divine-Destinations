@@ -235,3 +235,30 @@ document.querySelectorAll('input[name="locationOption"]').forEach((radio) => {
   });
 });
 
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const carousels = document.querySelectorAll(".carousel");
+
+  carousels.forEach((carousel) => {
+      let currentIndex = 0;
+      const images = carousel.querySelectorAll("img");
+
+      // Function to cycle images
+      function cycleImages() {
+          images.forEach((img, index) => {
+              img.classList.remove("active"); // Remove active class
+              if (index === currentIndex) {
+                  img.classList.add("active"); // Add active class to current image
+              }
+          });
+
+          currentIndex = (currentIndex + 1) % images.length; // Move to the next image
+      }
+
+      // Start the carousel
+      setInterval(cycleImages, 3000); // Change image every 3 seconds
+  });
+});
+
