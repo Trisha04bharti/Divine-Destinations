@@ -172,16 +172,54 @@ body {
     scale: 1.1;
 }
 
-#page2 .elem .dets {
+/* #page2 .elem .dets {
     height: 60px;
     border-radius: 50px;
     width: 70%;
     position: absolute;
     z-index: 9;
     background-color: rgb(229, 156, 186);
+    text-align: center;
+    justify-content: center;  
+    
 
 
 }
+
+.h3scroll {
+    
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  } */
+
+
+  #page2 .elem .dets {
+    height: 60px;
+    border-radius: 50px;
+    width: 70%;
+    position: absolute;
+    z-index: 9;
+    background-color: rgb(229, 156, 186);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h3scroll {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+  
 
 #page3 {
     display: flex; /* Arrange children in a row */
@@ -219,6 +257,22 @@ body {
       
     
 }
+
+h2 {
+    display: inline-block;
+    background-color: darkblue;
+    color: white;
+    padding: 0.3em 0.7em;
+    border-radius: 10px;
+    font-size: 1.8em;
+    margin-top: 1em; /* Optional: Adds space above the h2 */
+    text-align: center; /* Centers the text */
+}
+
+
+
+
+
 
 .carousel {
     width: 100%;
