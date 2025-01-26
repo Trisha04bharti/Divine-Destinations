@@ -335,6 +335,76 @@ document.querySelectorAll('input[name="locationOption"]').forEach((radio) => {
       setInterval(cycleImages, 3000); // Change image every 3 seconds
     });
   });
+
+
+  // about section k liye
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const backgroundWrappers = document.querySelectorAll(".background-wrapper");
+  
+    backgroundWrappers.forEach((wrapper) => {
+      let isFirstBackground = true;
+      const backgroundBox = wrapper.querySelector(".background-box");
+  
+      
+      if (backgroundBox) {
+        backgroundBox.style.backgroundImage = `url('${backgroundBox.dataset.bg1}')`;
+      }
+  
+     
+      function toggleBackground() {
+        isFirstBackground = !isFirstBackground;
+        const newBackground = isFirstBackground
+          ? backgroundBox.dataset.bg1
+          : backgroundBox.dataset.bg2;
+        backgroundBox.style.backgroundImage = `url('${newBackground}')`;
+      }
+  
+      
+      setInterval(toggleBackground, 3000);
+    });
+  });
+
+  // document.addEventListener("DOMContentLoaded", () => {
+  //   const backgroundWrappers = document.querySelectorAll(".background-wrapper");
+  
+  //   backgroundWrappers.forEach((wrapper) => {
+  //     let isFirstBackground = true;
+  //     const backgroundBox = wrapper.querySelector(".background-box");
+  
+  //     // Preload the first image to get its natural dimensions
+  //     const img = new Image();
+  //     img.src = backgroundBox.dataset.bg1;
+  
+  //     img.onload = () => {
+  //       // Set the box size to match the image size
+  //       backgroundBox.style.width = `${img.width}px`;
+  //       backgroundBox.style.height = `${img.height}px`;
+  
+  //       // Set the initial background
+  //       backgroundBox.style.backgroundImage = `url('${backgroundBox.dataset.bg1}')`;
+  //     };
+  
+  //     // Function to toggle background images
+  //     function toggleBackground() {
+  //       isFirstBackground = !isFirstBackground;
+  //       const newImage = isFirstBackground
+  //         ? backgroundBox.dataset.bg1
+  //         : backgroundBox.dataset.bg2;
+  
+  //       // Update the background
+  //       backgroundBox.style.backgroundImage = `url('${newImage}')`;
+  //     }
+  
+  //     // Start cycling every 3 seconds
+  //     setInterval(toggleBackground, 3000);
+  //   });
+  // });
+  
+  
+  
+  
+  
   
 
 
