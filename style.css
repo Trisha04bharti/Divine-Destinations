@@ -197,22 +197,28 @@ body {
   } */
 
 
-  #page2 .elem .dets {
+ 
+
+#page2 .elem .dets {
     height: 60px;
     border-radius: 50px;
-    width: 70%;
+    width: 50%;
     position: absolute;
+    top: 65%; /* Position it below the center */
+    /* left: 50%;  */
+    transform: translate(-50%, -50%); /* Adjust position to align with the center */
     z-index: 9;
-    background-color: rgb(229, 156, 186);
+    background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+
 .h3scroll {
     font-size: 20px;
-    color: #333;
+    color: white;
     text-align: center;
     overflow: hidden;
     white-space: nowrap;
@@ -427,7 +433,7 @@ h2 {
         width: 70%;
         position: absolute;
         z-index: 9;
-        background-color: rgb(229, 156, 186);
+        background-color: red;
 
     }
 
