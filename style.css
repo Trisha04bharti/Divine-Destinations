@@ -622,7 +622,64 @@ h2 {
   }
   
 
+/* css for footer section  */
 
+.footer-container {
+    margin-top: 120px;
+    background-color: var(--color-secondary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100vw;
+    padding: 58px 10%;
+    gap: 10px;
+    background-color:whitesmoke;
+}
+
+.footer-text h2 {
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.footer-text p {
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.contacts {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    /* No need to specify width/height for .contacts */
+    margin: 30px 15px 30px 0;
+  }
+  
+  .contacts a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 0 10px; /* Adjust the spacing between each icon */
+    transition: transform 0.3s ease;
+  }
+  
+  .contacts a:hover {
+    transform: scale(1.1); /* Scale the icon when hovered */
+    background: #0ef;
+    color : #081b29;
+    box-shadow : 0 0 20px #0ef;
+  }
+
+/* css for footer section end */
   
   
   
