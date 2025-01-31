@@ -246,13 +246,13 @@ document.querySelectorAll('input[name="locationOption"]').forEach((radio) => {
       const images = carousel.querySelectorAll("img");
       const child = carousel.closest(".child");
   
-      // Set the first image to be active initially
+     
       images[currentIndex].classList.add("active");
       if (child) {
         child.style.backgroundImage = `url('${images[currentIndex].src}')`;
       }
   
-      // Function to cycle images
+      
       function cycleImages() {
         const previousIndex = currentIndex;
         currentIndex = (currentIndex + 1) % images.length; // Move to the next image
