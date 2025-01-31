@@ -227,9 +227,9 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
-    text-align: center; /* Center text inside child elements */
+    align-items: center; 
+    justify-content: center;
+    text-align: center; 
 }
 
 

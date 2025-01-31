@@ -257,7 +257,7 @@ document.querySelectorAll('input[name="locationOption"]').forEach((radio) => {
         const previousIndex = currentIndex;
         currentIndex = (currentIndex + 1) % images.length; // Move to the next image
   
-        // Remove active class from the previous image and add to the current
+       
         images[previousIndex].classList.remove("active");
         images[currentIndex].classList.add("active");
   
