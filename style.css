@@ -157,7 +157,7 @@ body {
 #page2 .elem {
     height: 100%;
     width: 31%;
-    /* background-color: red; */
+    
     overflow: hidden;
     position: relative;
     display: flex;
@@ -172,29 +172,8 @@ body {
     scale: 1.1;
 }
 
-/* #page2 .elem .dets {
-    height: 60px;
-    border-radius: 50px;
-    width: 70%;
-    position: absolute;
-    z-index: 9;
-    background-color: rgb(229, 156, 186);
-    text-align: center;
-    justify-content: center;  
-    
 
 
-}
-
-.h3scroll {
-    
-    font-size: 20px;
-    color: #333;
-    text-align: center;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  } */
 
 
  
@@ -225,14 +204,15 @@ body {
     text-overflow: ellipsis;
 }
 
+ /* here is near by attraction  */
   
 
 #page3 {
     display: flex; /* Arrange children in a row */
     flex-wrap: wrap; /* Allow wrapping */
-    gap: 85px; /* Space between children */
+    gap: 75px; /* Space between children */
     justify-content: center; /* Center align the children */
-    padding: 20px;
+    padding: 7px;
 }
 
 
@@ -240,6 +220,18 @@ body {
    
     background-color: #0056b3;
  }
+ .about {
+    background-color: #0056b3;
+    padding: 20px 5%;
+    margin: 40px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center; /* Center text inside child elements */
+}
+
 
 .child {
     width: 350px;
@@ -264,7 +256,7 @@ body {
     
 }
 
-h2 {
+.aa {
     display: inline-block;
     background-color: darkblue;
     color: white;
@@ -323,163 +315,18 @@ h2 {
 
 
 
-@media (max-width:600px) {
 
-    #nav {
-        /* height: 100px; */
-        width: 100%;
-        /* background-color: burlywood; */
-        position: fixed;
-        z-index: 99;
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        padding: 15px;
-    }
+  
 
-    #nav #nav-part2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 40px;
-    }
+   
 
-    #links {
-        padding: 10px;
-        display: none;
-    }
 
-    #nav-part1 {
-        /* background-color: RED; */
-        height: 67px;
-        overflow: hidden;
-    }
 
-    #nav-part1 svg {
-        display: block;
-        height: 67px;
-        width: 80px;
-    }
-    #nav #twogoodlogo{
-        height: 40px;
-        margin-left: -20px;
-    }
+ 
 
-    #icons {
-        padding: 7px;
-        border-radius: 50px;
-        background-color: #F7F7F7;
-    }
 
-    #nav-part2 #icons i {
-        font-size: 15px;
-        margin: 0 20px;
-        font-weight: 100;
-    }
 
-    #page1 {
-        /* background-color: red; */
-        min-height: 70vh;
-        width: 100%;
-        padding: 0 3vw;
-        padding-top: 25vh;
 
-    }
-
-    #page1 h1 {
-        font-size: 15.5vw;
-        letter-spacing: -3px;
-    }
-
-    #video-container {
-        height: 25vh;
-        margin-top: 3vw;
-    }
-
-    #video-container #play {
-        padding: 9.5vw 7.2vw;
-        font-size: 4.5vw;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        opacity: 1;
-        scale: 1;
-        transform: translate(-50%, -50%);
-    }
-
-    #page2 {
-        min-height: 100vh;
-        width: 100%;
-        position: relative;
-        display: flex;
-        align-items: center;
-        padding: 5vw 3vw;
-        flex-direction: column;
-        justify-content: space-between;
-        /* background-color: red; */
-    }
-
-    #page2 .elem {
-        height: 100vh;
-        width: 100%;
-        /* background-color: red; */
-        overflow: hidden;
-        margin-bottom: 3vw;
-    }
-
-    #page2 .elem .dets {
-        height: 40px;
-        border-radius: 50px;
-        width: 70%;
-        position: absolute;
-        z-index: 9;
-        background-color: red;
-
-    }
-
-    /* #page3 {
-        min-height: 120vh;
-        width: 100%;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-    }
-
-    .child {
-        height: 54vh;
-        width: 88vw;
-        background-color: red;
-        border: 2px solid #000;
-        position: relative;
-        padding: 15vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius : 20px;
-    }
-
-    .child img {
-        height: 100%;
-    } */
-
-    /* .child {
-        background-color: blue;
-        color: white;
-        padding: 20px;
-        border-radius: 5px;
-        min-height: 100px;
-      }
-    
-      .carousel img {
-        display: block;
-        width: 100%;
-        max-width: 300px;
-        margin: 10px auto;
-      } */
-
-}
 
 
 
@@ -540,33 +387,7 @@ h2 {
     font-size: 18px;
   }
 
-  /* about section  */
 
- 
-  
-/*   
-  .background-carousel {
-    display: flex;
-    overflow-x: auto;
-    padding: 20px;
-    gap: 20px;
-  }
-  
-  .background-wrapper {
-    flex-shrink: 0;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  
-  .background-box {
-    width: 600px;
-    height: 900px; 
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center;
-    transition: background-image 1s ease-in-out;
-  } */
 
 
   .background-carousel {
@@ -624,60 +445,100 @@ h2 {
 
 /* css for footer section  */
 
-.footer-container {
-    margin-top: 120px;
-    background-color: var(--color-secondary);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100vw;
-    padding: 58px 10%;
-    gap: 10px;
-    background-color:whitesmoke;
+/* Footer Container */
+
+:root {
+    --color-secondary: #1a1a1a; /* Adjust as needed */
 }
 
+.footer-container {
+    margin-top: 120px;
+    background-color: var(--color-secondary, #0f0f0f); /* Fallback color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 60px 10%;
+    gap: 40px;
+}
+
+/* Footer Text */
 .footer-text h2 {
-    font-size: 80px;
+    font-size: 36px;
     font-weight: 700;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    margin: 0;
 }
 
 .footer-text p {
-    font-size: 40px;
+    font-size: 18px;
     font-weight: 400;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin: 10px 0 0 0;
 }
 
+/* Social Media Contacts */
 .contacts {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    /* No need to specify width/height for .contacts */
-    margin: 30px 15px 30px 0;
-  }
-  
-  .contacts a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    margin: 20px 0;
+}
+
+.contacts a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
     background: transparent;
     border: 2px solid #0ef;
     border-radius: 50%;
-    font-size: 20px;
-    color: #0ef;
+    font-size: 24px;
+    color: #ffffff;
     text-decoration: none;
-    margin: 0 10px; /* Adjust the spacing between each icon */
-    transition: transform 0.3s ease;
-  }
-  
-  .contacts a:hover {
-    transform: scale(1.1); /* Scale the icon when hovered */
+    margin: 0 15px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contacts a:hover {
+    transform: scale(1.1);
     background: #0ef;
-    color : #081b29;
-    box-shadow : 0 0 20px #0ef;
-  }
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-text h2 {
+        font-size: 28px;
+    }
+
+    .footer-text p {
+        font-size: 16px;
+    }
+
+    .contacts a {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        margin: 0 10px;
+    }
+
+    .footer-container {
+        padding: 40px 5%;
+        gap: 30px;
+    }
+}
 
 /* css for footer section end */
   
