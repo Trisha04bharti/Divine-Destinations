@@ -544,3 +544,38 @@ body {
   
   
   
+/* time section start */
+
+#time {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  /* timechild styling */
+  .timechild {
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
+    overflow: hidden;
+    border-radius: 20px;
+    /* Optional: add a background color if desired */
+    background-color: #f0f0f0;
+  }
+
+  /* Optional: style for the image inside each timechild */
+  .timechild img {
+    max-width: 100%;
+    height: auto;
+    border-radius: inherit;
+  }
+
+/* time section ends  */
