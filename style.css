@@ -579,3 +579,20 @@ body {
   }
 
 /* time section ends  */
+
+.mahabodhi {
+    width: 64vw;  /* 1/4 of viewport width */
+    height: 35vw; /* 4 times the width to maintain 1:4 aspect ratio */
+    
+    background-color: lightblue; /* Example background color */
+    
+    /* Centering the div */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* Optional Styling */
+    border: 2px solid black;
+    text-align: center;
+    font-size: 1.5rem;
+}
