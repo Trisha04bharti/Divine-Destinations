@@ -339,12 +339,15 @@ body {
 
 
 .container {
-    max-width: 500px;
-    margin: 50px auto;
+    max-width: 700px;
+    margin: 90px auto;
     padding: 20px;
     background: white;
     border-radius: 5px;
     box-shadow: 1px 1px 20px #007bff, 1px 1px 20px 40px  #91EAE4;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
 
   }
   
@@ -400,8 +403,8 @@ body {
   .background-wrapper {
     flex-shrink: 0;
     position: relative; /* To allow positioning of text over the background */
-    width: 600px; /* Set a width for the image box */
-    height: 900px; /* Set a height for the image box */
+    width: 300px; /* Set a width for the image box */
+    height: 400px; /* Set a height for the image box */
     border: 2px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
@@ -422,20 +425,23 @@ body {
     text-align: center;
   }
   
+
   .article-content {
-    position: absolute; /* Position text over the image */
-    top: 50%; /* Center the text vertically */
-    left: 50%; /* Center the text horizontally */
-    transform: translate(-50%, -50%); /* Adjust for true center alignment */
-    /* background: rgba(0, 0, 0, 0.5); Semi-transparent background for text */
+    position: relative; /* Keep it in normal flow */
     padding: 10px;
     border-radius: 5px;
-  }
-  
-  .article-content h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
+     /* Optional: Background for visibility */
+}
+
+.article-content h1 {
+    font-size: 20px;
+    margin-top: 369px; /* Adds space between the div and the heading */
+    background-color: #800000;
+    padding: 10px 40px; /* Adjust padding */
+    color: white;
+    display: inline-block; /* Ensures the background wraps around content */
+}
+
   
   .article-content p {
     font-size: 14px;
@@ -548,14 +554,17 @@ body {
 
 #time {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 40px;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 20px;
-  }
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    width: 100%;
+}
 
-  /* timechild styling */
-  .timechild {
+.timechild {
     width: 350px;
     height: 350px;
     text-align: center;
@@ -567,32 +576,48 @@ body {
     box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
     overflow: hidden;
     border-radius: 20px;
-    /* Optional: add a background color if desired */
     background-color: #f0f0f0;
-  }
+    flex-shrink: 0;
+}
 
-  /* Optional: style for the image inside each timechild */
-  .timechild img {
+.timechild img {
     max-width: 100%;
     height: auto;
     border-radius: inherit;
-  }
+}
+
+
+    
+
+
+    
 
 /* time section ends  */
 
+
 .mahabodhi {
-    width: 64vw;  /* 1/4 of viewport width */
-    height: 35vw; /* 4 times the width to maintain 1:4 aspect ratio */
-    
-    background-color: lightblue; /* Example background color */
-    
-    /* Centering the div */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    /* Optional Styling */
-    border: 2px solid black;
-    text-align: center;
-    font-size: 1.5rem;
+    width: 95%;
+    max-width: 2000px;
+    margin: auto;
+    background: #ffffff;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
+
+.maha {
+    color: #4a3f35;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 20px 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.con {
+    display: flex;  /* Ensures images align in a row */
+    gap: 250px;  /* Adds spacing between the images */
+    justify-content: center; /* Centers the images horizontally */
+    align-items: center; /* Aligns images vertically */
+    
+}
+
