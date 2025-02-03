@@ -616,8 +616,8 @@ body {
 .con {
     display: flex;  /* Ensures images align in a row */
     gap: 250px;  /* Adds spacing between the images */
-    justify-content: center; /* Centers the images horizontally */
-    align-items: center; /* Aligns images vertically */
+    justify-content: center; 
+    align-items: center; 
     
 }
 
