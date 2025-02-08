@@ -1,4 +1,4 @@
-# Divine Destination 🌟🕌
+# Divine-Destinations 🌟🕌
 
 Welcome to **Divine Destination** – your ultimate web-based tourist guide to explore the mesmerizing cultural and historical sites of Bodhgaya! This project is built with a focus on simplicity, elegance, and functionality, offering real-time distance calculations with the help of the Openrouteservice API. 🚀✨
 
